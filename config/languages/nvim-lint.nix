@@ -2,9 +2,9 @@
   options = {
     nvim-lint.enable = lib.mkEnableOption "Enable nvim-lint module";
   };
-  extraPackages = with pkgs; [ checkstyle statix flake8 ];
 
   config = lib.mkIf config.nvim-lint.enable {
+    extraPackages = with pkgs; [ checkstyle statix flake8 ];
     plugins.lint = {
       enable = true;
       lintersByFt = {
