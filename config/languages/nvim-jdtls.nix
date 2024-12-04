@@ -9,7 +9,9 @@ in {
   config = lib.mkIf config.nvim-jdtls.enable {
     plugins.nvim-jdtls = {
       enable = true;
-      cmd = [ "/run/current-system/sw/bin/jdtls" ];
+      cmd = [
+        "/nix/store/l05jjpqa7wam5xyi93fxw0l1rwn3ix5n-jdt-language-server-1.40.0/bin/jdtls"
+      ];
       # configuration = "/path/to/configuration";
       data = "~/.cache/jdtls/workspace";
       settings = {
