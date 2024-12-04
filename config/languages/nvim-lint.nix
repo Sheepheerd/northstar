@@ -4,7 +4,7 @@
   };
 
   config = lib.mkIf config.nvim-lint.enable {
-    extraPackages = with pkgs; [ checkstyle statix flake8 ];
+    extraPackages = with pkgs; [ checkstyle statix pylint ];
     plugins.lint = {
       enable = true;
       lintersByFt = {
@@ -13,7 +13,7 @@
         go = [ "golangci-lint" ];
         nix = [ "statix" ];
         lua = [ "selene" ];
-        python = [ "flake8" ];
+        python = [ "pylint" ];
         javascript = [ "eslint_d" ];
         javascriptreact = [ "eslint_d" ];
         typescript = [ "eslint_d" ];
