@@ -37,4 +37,8 @@
   telescope.enable = lib.mkDefault true;
   ui.enable = lib.mkDefault true;
   utils.enable = lib.mkDefault true;
+
+extraPlugins = with pkgs.vimPlugins; [
+      supermaven-nvim
+    ];
 }
