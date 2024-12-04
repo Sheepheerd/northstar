@@ -48,7 +48,7 @@
       # Enable persistent undo history
       swapfile = false;
       backup = false;
-      undofile = false;
+      undofile = true;
 
       # Enable 24-bit colors
       termguicolors = true;
