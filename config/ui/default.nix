@@ -13,8 +13,8 @@
     alpha.enable = lib.mkDefault false;
     barbecue.enable = lib.mkDefault false;
     dressing-nvim.enable = lib.mkDefault false;
-    indent-blankline.enable = lib.mkDefault true;
-    nui.enable = lib.mkDefault true;
+    indent-blankline.enable = lib.mkDefault false;
+    nui.enable = lib.mkDefault false;
     web-devicons.enable = lib.mkDefault true;
   };
 }
