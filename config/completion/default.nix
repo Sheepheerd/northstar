@@ -7,5 +7,6 @@
   config = lib.mkIf config.completion.enable {
     cmp.enable = lib.mkDefault true;
     lspkind.enable = lib.mkDefault true;
+    codium-nvim.enable = lib.mkDefault true;
   };
 }

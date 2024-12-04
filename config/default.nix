@@ -1,4 +1,4 @@
-{ lib, config, pkgs,... }: {
+{ lib, config, pkgs, ... }: {
   # Import all your configuration modules here
   imports = [
     ./bufferlines
@@ -38,7 +38,4 @@
   ui.enable = lib.mkDefault true;
   utils.enable = lib.mkDefault true;
 
-extraPlugins = with pkgs.vimPlugins; [
-      supermaven-nvim
-    ];
 }
