@@ -1,4 +1,4 @@
-{ lib, config, ... }: {
+{ lib, config, pkgs,... }: {
   # Import all your configuration modules here
   imports = [
     ./bufferlines
