@@ -1,7 +1,9 @@
-{ lib, config, ... }: {
+{ lib, config, pkgs, ... }: {
   options = {
     nvim-lint.enable = lib.mkEnableOption "Enable nvim-lint module";
   };
+  extraPackages = with pkgs; [ checkstyle statix flake8 ];
+
   config = lib.mkIf config.nvim-lint.enable {
     plugins.lint = {
       enable = true;
@@ -9,7 +11,7 @@
         c = [ "cpplint" ];
         cpp = [ "cpplint" ];
         go = [ "golangci-lint" ];
-        #nix = [ "statix" ];
+        nix = [ "statix" ];
         lua = [ "selene" ];
         python = [ "flake8" ];
         javascript = [ "eslint_d" ];
