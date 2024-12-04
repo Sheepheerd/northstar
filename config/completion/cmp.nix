@@ -13,11 +13,14 @@
         settings = {
           experimental = { ghost_text = true; };
           mapping = {
+            "<Tab>" = null;
+
+            "<S-Tab>" = null;
 
             "<C-j>" = "cmp.mapping.select_next_item()";
             "<C-k>" = "cmp.mapping.select_prev_item()";
 
-            "<Tab>" = ''
+            "<C-n>" = ''
               cmp.mapping(function(fallback)
                 if cmp.visible() then
                   cmp.select_next_item()
@@ -29,7 +32,7 @@
               end, { "i", "s" })
             '';
 
-            "<S-Tab>" = ''
+            "<C-p>" = ''
               cmp.mapping(function(fallback)
                 if cmp.visible() then
                   cmp.select_prev_item()
