@@ -47,7 +47,7 @@
 
       # Enable persistent undo history
       swapfile = false;
-      backup = true;
+      backup = false;
       undofile = false;
 
       # Enable 24-bit colors
@@ -73,7 +73,7 @@
       scrolloff = 8;
 
       # Place a column line
-      colorcolumn = "80";
+      # colorcolumn = "80";
 
       # Reduce which-key timeout 
       timeoutlen = 200;
