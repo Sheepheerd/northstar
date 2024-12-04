@@ -47,8 +47,8 @@
             __unkeyed-2 = "prettier";
             stop_after_first = true;
           };
-          java = [ "google-java-format" ];
-          python = [ "ruff" "black" ];
+          # java = [ "google-java-format" ];
+          # python = [ "ruff" "black" ];
           lua = [ "stylua" ];
           nix = [ "nixfmt" ];
           markdown = {
