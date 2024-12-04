@@ -16,8 +16,6 @@
     barbecue.enable = lib.mkDefault false;
     dressing-nvim.enable = lib.mkDefault false;
     indent-blankline.enable = lib.mkDefault true;
-    noice.enable = lib.mkDefault false;
-    notify.enable = lib.mkDefault false;
     nui.enable = lib.mkDefault true;
     web-devicons.enable = lib.mkDefault true;
   };
