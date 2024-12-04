@@ -4,8 +4,6 @@
   };
   config = lib.mkIf config.lazy-nvim.enable {
     plugins.lazy = { enable = true; };
-    extraConfigLua = ''
-      require("lazy").setup()
-    '';
+    
   };
 }
