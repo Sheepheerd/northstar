@@ -6,4 +6,7 @@
     plugins.lazy = { enable = true; };
 
   };
+extraPlugins = with pkgs.vimPlugins; [
+      supermaven-nvim
+    ];
 }
