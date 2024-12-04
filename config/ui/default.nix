@@ -4,9 +4,7 @@
     ./barbecue.nix
     ./dressing-nvim.nix
     ./indent-blankline.nix
-    ./noice.nix
     ./nui.nix
-    ./notify.nix
     ./web-devicons.nix
   ];
 
