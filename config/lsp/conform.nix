@@ -1,7 +1,7 @@
-{ lib, config, ... }: {
+{ lib, config, pkgs, ... }: {
   options = { conform.enable = lib.mkEnableOption "Enable conform module"; };
   config = lib.mkIf config.conform.enable {
-
+    extraPackages = with pkgs; [ black ruff google-java-format ];
     plugins.conform-nvim = {
       enable = true;
       settings = {
@@ -47,8 +47,8 @@
             __unkeyed-2 = "prettier";
             stop_after_first = true;
           };
-          # java = [ "google-java-format" ];
-          # python = [ "ruff" "black" ];
+          java = [ "google-java-format" ];
+          python = [ "ruff" "black" ];
           lua = [ "stylua" ];
           nix = [ "nixfmt" ];
           markdown = {
