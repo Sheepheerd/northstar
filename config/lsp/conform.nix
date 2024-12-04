@@ -1,14 +1,11 @@
-{ lib, config, ... }:
-{
-  options = {
-    conform.enable = lib.mkEnableOption "Enable conform module";
-  };
+{ lib, config, ... }: {
+  options = { conform.enable = lib.mkEnableOption "Enable conform module"; };
   config = lib.mkIf config.conform.enable {
 
     plugins.conform-nvim = {
       enable = true;
       settings = {
-        notify_on_error = true;
+        notify_on_error = false;
         # default_format_opts = {
         #   lsp_format = "fallback";
         # };
