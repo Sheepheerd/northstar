@@ -1,9 +1,4 @@
-{
-  lib,
-  config,
-  ...
-}:
-{
+{ lib, config, ... }: {
   imports = [
     ./alpha.nix
     ./barbecue.nix
@@ -15,16 +10,14 @@
     ./web-devicons.nix
   ];
 
-  options = {
-    ui.enable = lib.mkEnableOption "Enable ui module";
-  };
+  options = { ui.enable = lib.mkEnableOption "Enable ui module"; };
   config = lib.mkIf config.ui.enable {
-    alpha.enable = lib.mkDefault true;
-    barbecue.enable = lib.mkDefault true;
-    dressing-nvim.enable = lib.mkDefault true;
+    alpha.enable = lib.mkDefault false;
+    barbecue.enable = lib.mkDefault false;
+    dressing-nvim.enable = lib.mkDefault false;
     indent-blankline.enable = lib.mkDefault true;
     noice.enable = lib.mkDefault false;
-    notify.enable = lib.mkDefault true;
+    notify.enable = lib.mkDefault false;
     nui.enable = lib.mkDefault true;
     web-devicons.enable = lib.mkDefault true;
   };
