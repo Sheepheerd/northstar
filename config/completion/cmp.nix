@@ -52,6 +52,7 @@
           };
           sources = [
             { name = "nvim_lsp"; }
+            { name = "codeium"; }
             {
               name = "buffer";
               keyword_length = 5;
