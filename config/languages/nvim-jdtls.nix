@@ -1,9 +1,8 @@
 { lib, config, ... }:
 let
-  javaTestPath = "/nix/store/j3nvmhvj2pmnykw5pbm51dn0bz4cv6j3-vscode-extension-vscjava-vscode-java-test-0.38.2023032402/share/vscode/extensions/vscjava.vscode-java-test/server/com.microsoft.java.test.plugin-0.38.2.jar
- ";
-in
-{
+  javaTestPath =
+    "/nix/store/j3nvmhvj2pmnykw5pbm51dn0bz4cv6j3-vscode-extension-vscjava-vscode-java-test-0.38.2023032402/share/vscode/extensions/vscjava.vscode-java-test/server/com.microsoft.java.test.plugin-0.38.2.jar\n ";
+in {
   options = {
     nvim-jdtls.enable = lib.mkEnableOption "Enable nvim-jdtls module";
   };
@@ -11,7 +10,7 @@ in
     plugins.nvim-jdtls = {
       enable = true;
       cmd = [
-        "/nix/store/20h2hjjm94gbskqhbwikbgxbblv1xpf2-jdt-language-server-1.31.0/bin/jdtls"
+        "/nix/store/l05jjpqa7wam5xyi93fxw0l1rwn3ix5n-jdt-language-server-1.40.0"
       ];
       # configuration = "/path/to/configuration";
       data = "~/.cache/jdtls/workspace";
