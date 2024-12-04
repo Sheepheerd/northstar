@@ -13,9 +13,9 @@
         settings = {
           experimental = { ghost_text = true; };
           mapping = {
-            "<Tab>" = null;
+            "<Tab>" = "";
 
-            #"<S-Tab>" = null;
+            "<S-Tab>" = "";
 
             "<C-j>" = "cmp.mapping.select_next_item()";
             "<C-k>" = "cmp.mapping.select_prev_item()";
