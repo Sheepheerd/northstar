@@ -1,7 +1,7 @@
 { lib, config, pkgs, ... }: {
   options = { conform.enable = lib.mkEnableOption "Enable conform module"; };
   config = lib.mkIf config.conform.enable {
-    extraPackages = with pkgs; [ black ruff google-java-format ];
+    extraPackages = with pkgs; [ black ruff google-java-format checkstyle ];
     plugins.conform-nvim = {
       enable = true;
       settings = {
