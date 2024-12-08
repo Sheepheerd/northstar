@@ -13,6 +13,6 @@
     treesitter-nvim.enable = lib.mkDefault true;
     nvim-jdtls.enable = lib.mkDefault true;
     nvim-lint.enable = lib.mkDefault true;
-    rustaceanvim.enable = lib.mkDefault false;
+    rustaceanvim.enable = lib.mkDefault true;
   };
 }
