@@ -1,5 +1,5 @@
 { lib, config, ... }: {
-  imports = [ ./cmp.nix ./lspkind.nix ./codeium-nvim.nix ];
+  imports = [ ./cmp.nix ./lspkind.nix ./codeium-nvim.nix ./copilot.nix ];
 
   options = {
     completion.enable = lib.mkEnableOption "Enable completion module";
