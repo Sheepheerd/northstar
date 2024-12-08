@@ -4,7 +4,7 @@
 
     plugins.lspkind = {
       enable = true;
-      symbolMap = { Codium = ""; };
+      symbolMap = { Copilot = ""; };
       extraOptions = {
         maxwidth = 50;
         ellipsis_char = "...";

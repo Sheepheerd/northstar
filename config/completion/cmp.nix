@@ -7,6 +7,7 @@
       cmp-path = { enable = true; }; # file system paths
       cmp-cmdline = { enable = true; }; # autocomplete for cmdline
       cmp_luasnip = { enable = true; }; # snippets
+      copilot-cmp = { enable = true; }; # copilot suggestions
       cmp = {
         enable = true;
         autoEnableSources = false;
@@ -55,7 +56,7 @@
           };
           sources = [
             { name = "nvim_lsp"; }
-            { name = "codeium"; }
+            { name = "copilot"; }
             {
               name = "buffer";
               keyword_length = 5;
