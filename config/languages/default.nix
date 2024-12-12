@@ -4,7 +4,7 @@
     ./rustaceanvim.nix
     ./nvim-jdtls.nix
     ./nvim-lint.nix
-    ./vim-godot.nix
+    #    ./vim-godot.nix
     ./vimtex.nix
   ];
 
@@ -16,6 +16,6 @@
     nvim-jdtls.enable = lib.mkDefault true;
     nvim-lint.enable = lib.mkDefault true;
     rustaceanvim.enable = lib.mkDefault true;
-    vim-godot.enable = lib.mkDefault true;
+    #vim-godot.enable = lib.mkDefault true;
   };
 }
