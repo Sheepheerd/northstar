@@ -4,7 +4,7 @@
     ./rustaceanvim.nix
     ./nvim-jdtls.nix
     ./nvim-lint.nix
-    ./vim-godot.nix
+    ./godot.nix
     ./vimtex.nix
   ];
 
