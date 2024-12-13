@@ -50,5 +50,6 @@
     wakatime.enable = lib.mkDefault false;
     which-key.enable = lib.mkDefault true;
     wilder.enable = lib.mkDefault false;
+    fugitive.enable = lib.mkDefault true;
   };
 }
