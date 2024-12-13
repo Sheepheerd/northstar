@@ -23,6 +23,7 @@
     ./wakatime.nix
     ./which-key.nix
     ./wilder.nix
+    ./fugitive.nix
   ];
 
   options = { utils.enable = lib.mkEnableOption "Enable utils module"; };
