@@ -12,7 +12,7 @@
         cpp = [ "cpplint" ];
         go = [ "golangci-lint" ];
         nix = [ "statix" ];
-        lua = [ "selene" ];
+        # lua = [ "selene" ];
         python = [ "pylint" ];
         javascript = [ "eslint_d" ];
         javascriptreact = [ "eslint_d" ];
