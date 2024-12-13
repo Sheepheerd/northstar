@@ -15,13 +15,10 @@
             enable = true;
             extraOptions = {
               settings = {
-                workspace = {
-                  checkThirdParty = true;
-
-                };
+                workspace = { checkThirdParty = false; };
                 Lua = {
                   completion = { callSnippet = "Replace"; };
-                  diagnostics = { globals = [ "vim" ]; };
+                  # diagnostics = { globals = [ "vim" ]; };
 
                   telemetry = { enabled = false; };
                   hint = { enable = true; };
