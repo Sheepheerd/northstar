@@ -18,7 +18,7 @@
                 workspace = { checkThirdParty = false; };
                 Lua = {
                   completion = { callSnippet = "Replace"; };
-                  # diagnostics = { globals = [ "vim" ]; };
+                  diagnostics = { globals = [ "vim" "love" ]; };
 
                   telemetry = { enabled = false; };
                   hint = { enable = true; };
