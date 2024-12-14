@@ -11,11 +11,9 @@ in {
   config = lib.mkIf config.nvim-jdtls.enable {
     plugins.nvim-jdtls = {
       enable = true;
-      cmd = [
-        "/nix/store/cm709rzqzdqwqf6smap8m8q1adi8lfiw-jdt-language-server-1.40.0/bin/jdtls"
-      ];
+      cmd = [ "${pkgs.jdt-language-server}/bin/jdtls" ];
       configuration =
-        "/nix/store/cm709rzqzdqwqf6smap8m8q1adi8lfiw-jdt-language-server-1.40.0/share/java/jdtls/config_linux/config.ini";
+        "${pkgs.jdt-language-server}/share/java/jdtls/config_linux/config.ini";
       data = "~/.cache/jdtls/workspace";
       settings = {
         java = {
