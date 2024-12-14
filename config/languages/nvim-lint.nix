@@ -8,8 +8,8 @@
     plugins.lint = {
       enable = true;
       lintersByFt = {
-        c = [ "cpplint" ];
-        cpp = [ "cpplint" ];
+        c = [ "cppcheck" ];
+        cpp = [ "cppcheck" ];
         go = [ "golangci-lint" ];
         nix = [ "statix" ];
         # lua = [ "selene" ];
