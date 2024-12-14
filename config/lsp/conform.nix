@@ -51,6 +51,7 @@
           python = [ "ruff" "black" ];
           lua = [ "stylua" ];
           nix = [ "nixfmt" ];
+          cpp = [ "clang-tools" ];
           markdown = {
             __unkeyed-1 = "prettierd";
             __unkeyed-2 = "prettier";
