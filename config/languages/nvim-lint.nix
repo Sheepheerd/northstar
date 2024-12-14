@@ -13,7 +13,7 @@
         go = [ "golangci-lint" ];
         nix = [ "statix" ];
         # lua = [ "selene" ];
-        python = [ "pylint" ];
+        # python = [ "pylint" ];
         javascript = [ "eslint_d" ];
         javascriptreact = [ "eslint_d" ];
         typescript = [ "eslint_d" ];
